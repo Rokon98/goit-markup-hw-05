@@ -483,15 +483,15 @@ margin-bottom: 16px;
 .form-email {
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 .footer-input {
      width: 264px;
     height: 40px;
     padding: 8px 16px;
-    margin-right: 24px;
 
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-background);
 
@@ -506,13 +506,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--white-background);
 }
 .btn-email {
+    min-width: 165px;
     display: inline-flex;
     padding: 8px 24px;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    margin-left: 16px;
     background-color: var(--iris-color);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 
     font-size: 16px;
 font-weight: 500;
