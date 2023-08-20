@@ -397,8 +397,14 @@
                     <textarea class="modal-form-comment" name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Text input"></textarea>
                 </div>
                 <div class="form-privacy">
-                    <input type="checkbox" id="user-privacy" name="user-privary">
-                    <label for="user-privacy">I accept the terms and conditions of the <span>Privacy Policy</span></label>
+                    <input class="form-privacy-input visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+                    <label class="form-privacy-label" for="user-privacy">
+                        <span class="form-privacy-box">
+                            <svg class="form-privacy-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </span>
+                         l accept the terms and conditions of the <a href="" class="form-privacy-link">Privacy Policy</a></label>
                 </div>
                 <button class="form-btn" type="submit">Send</button>
             </form>

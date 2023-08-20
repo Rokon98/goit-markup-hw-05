@@ -765,6 +765,33 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-privacy{
     margin-bottom: 24px;
 }
+.form-privacy-input:checked + .form-privacy-label > .form-privacy-box{
+    background-color: var(--ocean-color);
+    fill: var(--cloud-background);
+    border-color: var(--ocean-color);
+}
+.form-privacy-label{
+    font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: var(--lightslate-color);
+}
+.form-privacy-box{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-privacy-link{
+    color: var(--iris-color);
+}
 .form-btn{
     display: block;
     margin-left: auto;
@@ -784,4 +811,5 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
 cursor: pointer;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
